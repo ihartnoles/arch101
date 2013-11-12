@@ -1,0 +1,75 @@
+{
+    "name": "exercise2",
+    "settings": {
+        "urlPrefix": "http://localhost/arch101/desktop/solution/exercise2",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 908,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000499,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "5d2b1de9-0507-43c8-85a7-1f6fd81074c4": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "fe88b2f8-a2cc-4f5b-97f3-7b04256accd4": {
+            "paths": [
+                "metadata/view/Main",
+                "app/view/override/Main.js",
+                "app/view/Main.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "Main"
+        },
+        "ca73eef6-d108-4a17-9774-9edc67d15de9": {
+            "paths": [
+                "metadata/view/Sponsors",
+                "app/view/override/Sponsors.js",
+                "app/view/Sponsors.js"
+            ],
+            "className": "Sponsors"
+        },
+        "c581edd1-4d3e-48bb-bf94-0d409872beac": {
+            "paths": [
+                "metadata/view/Earmarks",
+                "app/view/override/Earmarks.js",
+                "app/view/Earmarks.js"
+            ],
+            "className": "Earmarks"
+        },
+        "3a19f83e-dd4c-469d-8efd-49c91c7c4826": {
+            "paths": [
+                "metadata/view/SponsorChart",
+                "app/view/override/SponsorChart.js",
+                "app/view/SponsorChart.js"
+            ],
+            "className": "SponsorChart"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "fe88b2f8-a2cc-4f5b-97f3-7b04256accd4",
+            "ca73eef6-d108-4a17-9774-9edc67d15de9",
+            "c581edd1-4d3e-48bb-bf94-0d409872beac",
+            "3a19f83e-dd4c-469d-8efd-49c91c7c4826"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "5d2b1de9-0507-43c8-85a7-1f6fd81074c4"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

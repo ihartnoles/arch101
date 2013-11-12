@@ -1,0 +1,29 @@
+{
+    "expandedState": {
+        "data": true,
+        "model": true,
+        "component": true,
+        "controller": true,
+        "resource": true,
+        "b85a2ae3-343d-4b9c-9c17-8e8728736f54": {
+            "id": "b85a2ae3-343d-4b9c-9c17-8e8728736f54"
+        }
+    },
+    "tabState": {
+        "openTabs": [
+            "application",
+            "b85a2ae3-343d-4b9c-9c17-8e8728736f54"
+        ]
+    },
+    "canvasState": {
+        "topInstance": null
+    },
+    "inspectorState": {
+        "topInstance": "application",
+        "selectedInstance": "application"
+    },
+    "codeState": {
+        "topInstance": "application"
+    },
+    "editMode": "code"
+}

@@ -1,0 +1,292 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "rec": "",
+        "excuse": "",
+        "designer|userClassName": "friends.Detail",
+        "designer|userAlias": "friendsdetail",
+        "layout": "vbox"
+    },
+    "designerId": "9589c696-a959-4eb4-9e40-3217b3e226cb",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "rec",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "excuse",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 110,
+                "itemId": "frienddetails",
+                "designer|userClassName": "MyContainer5",
+                "layout": "hbox"
+            },
+            "designerId": "97fd01b4-c233-4c08-bfc6-ff0c1c5a3de3",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "html": "Placeholder",
+                        "itemId": "frienddetail",
+                        "margin": "0 5 5 0",
+                        "padding": "5 5 5 5",
+                        "style": "box-shadow: 3px 3px 4px #444; background-color: white",
+                        "designer|userClassName": "MyContainer6",
+                        "scrollable": true
+                    },
+                    "designerId": "0d23a7db-2270-4715-b123-6b7f562bd56b",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "tpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "tpl",
+                                "implHandler": [
+                                    "<div style=\"font-size: 0.8em\">",
+                                    " {firstName} {lastName}<br />",
+                                    " {address}<br />",
+                                    " {favoriteBeer} is only {distance} mi away!<br />",
+                                    " <span style=\"font-style: italic; font-size: 0.7em\">{excuse}</span>",
+                                    "</div>"
+                                ],
+                                "designer|displayName": "tpl"
+                            },
+                            "designerId": "ff18eb24-1ef4-495e-ace6-3788e64b112a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "contactbuttons",
+                        "designer|userClassName": "MyContainer7",
+                        "layout": "vbox"
+                    },
+                    "designerId": "0b7ec460-1c36-46c5-91d3-babc6805da78",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "btnMail",
+                                "margin": "5 5 5 5",
+                                "width": null,
+                                "designer|userClassName": "MyButton6",
+                                "iconAlign": "top",
+                                "iconCls": "mail",
+                                "iconMask": true,
+                                "scope": [
+                                    "this"
+                                ],
+                                "text": null
+                            },
+                            "designerId": "24199b04-3d09-4bd2-b428-336f76a63ffd",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "handler",
+                                        "fn": "handler",
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "implHandler": [
+                                            "var top = button.up('friendsdetail');",
+                                            "var mailString = Ext.String.format(",
+                                            "\"mailto:{0}?subject=Can I come over&body={1}\",",
+                                            "top.getRec().get(\"email\"),",
+                                            "top.getExcuse()",
+                                            ");",
+                                            "location.href=mailString;"
+                                        ]
+                                    },
+                                    "designerId": "6ca1462f-c7aa-4852-af56-c31958074066"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "btnPhone",
+                                "margin": "5 5 5 5",
+                                "width": 40,
+                                "designer|userClassName": "MyButton7",
+                                "iconAlign": "top",
+                                "iconCls": "phone1",
+                                "iconMask": true,
+                                "scope": [
+                                    "this"
+                                ],
+                                "text": null
+                            },
+                            "designerId": "d1303493-a2ef-4626-809f-688dfb103892",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "handler",
+                                        "fn": "handler",
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "implHandler": [
+                                            "var top = button.up('friendsdetail');",
+                                            "location.href='tel:' + top.getRec().get('phone');",
+                                            ""
+                                        ]
+                                    },
+                                    "designerId": "38223b1b-7468-4bda-96c6-b52b4eb31443"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Map",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "height": 200,
+                "itemId": "map",
+                "designer|userClassName": "MyMap"
+            },
+            "designerId": "4543b0cd-a97a-4cce-b5ea-8ab8231c9107"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onContainerInitialize",
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "var detailPanel = component.down('#frienddetail');",
+                    "",
+                    "// massage data",
+                    "var data = this.getRec().data;",
+                    "data.excuse = this.getExcuse();",
+                    "",
+                    "// generate markup from template",
+                    "detailPanel.setData(data);",
+                    "",
+                    "// get pointer to map component",
+                    "var mapPanel = component.down('map');",
+                    "",
+                    "// get pointer to passed-in data record",
+                    "var rec = this.getRec();",
+                    "",
+                    "// wait for map to become instantiated",
+                    "Ext.Function.defer(component.initMap,100,this,[component,rec.get('lat'),rec.get('lng')]);"
+                ],
+                "name": "initialize"
+            },
+            "designerId": "5a28b81e-f723-461f-b443-8444675623ca"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "initMap",
+                "fn": "initMap",
+                "designer|params": [
+                    "component,lat,lng"
+                ],
+                "implHandler": [
+                    "var mapPanel = component.down('map');",
+                    "var map = mapPanel.getMap();",
+                    "",
+                    "if (map == null) {",
+                    " // map not ready, try again",
+                    " Ext.Function.defer(this.initMap,250,this,[component,lat,lng]);",
+                    "} else {",
+                    " //set the map center",
+                    " mapPanel.setMapCenter({",
+                    "   latitude: lat, ",
+                    "   longitude: lng",
+                    " });",
+                    "",
+                    " // drop a marker",
+                    " var pos = new google.maps.LatLng(lat,lng);",
+                    "",
+                    " var marker = new google.maps.Marker({",
+                    "  position : pos,",
+                    "  map : map",
+                    " });",
+                    "",
+                    " //display the surrounding traffic",
+                    " var trafficLayer = new google.maps.TrafficLayer();",
+                    " trafficLayer.setMap(map);",
+                    "}"
+                ]
+            },
+            "designerId": "3541f6c2-5e0d-4c7d-87e5-0d64356619b4"
+        }
+    ]
+}

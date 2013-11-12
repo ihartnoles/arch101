@@ -1,0 +1,259 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Friend",
+        "requires": [
+            "Ext.data.proxy.LocalStorage"
+        ]
+    },
+    "id": "ExtBox1-ext-gen10458",
+    "designerId": "e45f4b83-18de-418c-9001-8eefeac871db",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field4",
+                "name": "firstName"
+            },
+            "designerId": "12637768-7d46-46b1-8f09-42a529b29f7d"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field5",
+                "name": "lastName"
+            },
+            "designerId": "6aaff3c8-3fee-432f-83ff-8a0f1135a5f9"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field6",
+                "name": "address"
+            },
+            "designerId": "feef57c3-d93b-4e6b-a94b-8e00a6a4dc9a"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field7",
+                "name": "zip"
+            },
+            "designerId": "985ca01b-3938-489e-a389-a1ced34b886b"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field8",
+                "name": "email"
+            },
+            "designerId": "4641cbb4-4bf7-4f3d-bfdb-991f1f934369"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field9",
+                "name": "phone"
+            },
+            "designerId": "4751df4b-f023-42db-ae79-59b0161d5332"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field10",
+                "name": "favoriteBeer"
+            },
+            "designerId": "76aca588-a5d8-483e-ae00-e5863177536c"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field11",
+                "name": "lat"
+            },
+            "designerId": "2bf11f69-727e-476c-b2af-83ecbd808d6e"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field12",
+                "name": "lng"
+            },
+            "designerId": "f5bf15e6-582e-44c8-977d-fc376bddf56a"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field13",
+                "name": "distance"
+            },
+            "designerId": "63221e43-3d6e-4f25-9fce-4d8d6d1a3812"
+        },
+        {
+            "type": "localstorageproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyLocalStorageProxy",
+                "id": "FriendsWithBeerContacts"
+            },
+            "designerId": "a64fc17f-f25f-48a5-8704-52017aedf1cb"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPresenceValidation",
+                "designer|displayName": "firstNamePresence",
+                "field": "firstName"
+            },
+            "designerId": "dc0f1398-e396-453a-a7e7-ed99bb16b041"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPresenceValidation",
+                "designer|displayName": "lastNamePresence",
+                "field": "lastName"
+            },
+            "designerId": "42b4e87a-374f-4696-9616-7d44e2703fa5"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPresenceValidation",
+                "designer|displayName": "addressPresence",
+                "field": "address"
+            },
+            "designerId": "9ae7a028-5943-41e3-a4ec-f0a40003c7f2"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPresenceValidation",
+                "designer|displayName": "zipPresence",
+                "field": "zip"
+            },
+            "designerId": "804e2439-5943-4330-a648-b2b732a54dac"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPresenceValidation",
+                "designer|displayName": "emailPresence",
+                "field": "email"
+            },
+            "designerId": "aeb0c9b7-3ac4-4866-b6c8-467bf03b0a5f"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPresenceValidation",
+                "designer|displayName": "phonePresence",
+                "field": "phone"
+            },
+            "designerId": "bef42957-e37e-4a38-baba-2bc600f56843"
+        },
+        {
+            "type": "emailvalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyEmailValidation",
+                "designer|displayName": "emailEmail",
+                "field": "email"
+            },
+            "designerId": "dc602803-fca9-4dea-9556-c7f688b876d9"
+        }
+    ]
+}

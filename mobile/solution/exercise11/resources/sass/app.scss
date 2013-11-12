@@ -1,0 +1,83 @@
+
+$base-color: #da9100;
+$base-gradient: glossy;
+$include-default-icons: false;
+
+// Importing our custom web font.
+@import url(http://fonts.googleapis.com/css?family=Rambla:700);
+
+@import "compass/css3";
+// @include font-face("Rambla", inline-font-files('Rambla.woff', woff));
+
+//use custom web font as default
+$font-family: 'Rambla', sans-serif !default;
+
+@import 'sencha-touch/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+// @include sencha-list-paging;
+// @include sencha-list-pullrefresh;
+@include sencha-layout;
+@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner;
+// @include sencha-draw;
+// @include sencha-charts;
+
+
+// Your custom code goes here...
+@include pictos-iconmask('user_add');
+@include pictos-iconmask('user_list');
+@include pictos-iconmask('team1');
+@include pictos-iconmask('phone_ring1');
+@include pictos-iconmask('search');
+@include pictos-iconmask('tv');
+@include pictos-iconmask('mail');
+@include pictos-iconmask('phone1');
+@include pictos-iconmask('info');
+@include pictos-iconmask('locate');
+@include pictos-iconmask('add');
+@include pictos-iconmask('trash');
+
+#beerintro img {
+  float: right;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+
+.x-innerhtml {
+    color: #3a1515;
+    text-shadow: 0px 1px rgba(255,255,255,.3);
+}
+
+
+.x-toolbar-dark, .x-tabbar-dark {
+   
+   background-image: inline-image('top-grain.png'), -webkit-radial-gradient(top center, circle, #9f5628, #5d2f17);
+   background-repeat: repeat-x;
+   .x-innerhtml {
+     color: #3a1515;
+     text-shadow: 0px 1px rgba(255,255,255,.3);
+   }
+}
+
+.x-scroll-container{
+    background: inline-image('background.png');
+    background-size: cover;
+}
+
+
+@include sencha-button-ui('amberBeerButton', #FFAC00,'glossy');
+

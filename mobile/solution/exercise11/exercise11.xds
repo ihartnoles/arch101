@@ -1,0 +1,181 @@
+{
+    "name": "exercise11",
+    "settings": {
+        "urlPrefix": "http://localhost/arch101/mobile/solution/exercise11",
+        "spacesToIndent": 4,
+        "exportPath": "/Library/WebServer/Documents/arch101/mobile/solution/exercise10_deploy",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 908,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000499,
+    "framework": "touch21",
+    "topInstanceFileMap": {
+        "6b85ba3c-0d03-430f-8613-108f4633ad33": {
+            "paths": [
+                "metadata/view/Main",
+                "app/view/override/Main.js",
+                "app/view/Main.js"
+            ],
+            "className": "Main"
+        },
+        "e92462fe-dcc0-4f0f-aaf0-cc84d1dac989": {
+            "paths": [
+                "metadata/view/Introduction",
+                "app/view/override/Introduction.js",
+                "app/view/Introduction.js"
+            ],
+            "className": "Introduction"
+        },
+        "7ea10723-9d5d-44bb-8dab-349e6e607abe": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "62e1aca3-f9b8-4b5e-845d-bde9ad112eee": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "fa9156dc-098e-40d1-aca0-6e09ffa81878": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        },
+        "90f67926-6bf1-49fb-8c62-b68a059d0b91": {
+            "paths": [
+                "metadata/store/Beers",
+                "app/store/override/Beers.js",
+                "app/store/Beers.js"
+            ],
+            "className": "Beers"
+        },
+        "ed2df0a5-8d92-4c3c-948f-b33ccaee4463": {
+            "paths": [
+                "metadata/model/Beer",
+                "app/model/override/Beer.js",
+                "app/model/Beer.js"
+            ],
+            "className": "Beer"
+        },
+        "28e089b1-6ac6-46a4-a18b-baaf6e1dd8f4": {
+            "paths": [
+                "metadata/store/Friends",
+                "app/store/override/Friends.js",
+                "app/store/Friends.js"
+            ],
+            "className": "Friends"
+        },
+        "e45f4b83-18de-418c-9001-8eefeac871db": {
+            "paths": [
+                "metadata/model/Friend",
+                "app/model/override/Friend.js",
+                "app/model/Friend.js"
+            ],
+            "className": "Friend"
+        },
+        "6c6650ba-8bee-418d-8b36-0473d3797660": {
+            "paths": [
+                "metadata/view/beer.List",
+                "app/view/override/beer/List.js",
+                "app/view/beer/List.js"
+            ],
+            "className": "beer.List"
+        },
+        "a6dcaf22-eb18-442d-b365-4a9ee695b10c": {
+            "paths": [
+                "metadata/controller/Friends",
+                "app/controller/override/Friends.js",
+                "app/controller/Friends.js"
+            ],
+            "className": "Friends"
+        },
+        "6270d421-3858-445a-8a45-ebed20dcbfef": {
+            "paths": [
+                "metadata/view/beer.Beer",
+                "app/view/override/beer/Beer.js",
+                "app/view/beer/Beer.js"
+            ],
+            "className": "beer.Beer"
+        },
+        "57fc704b-6232-41b7-85c1-f8c90606d787": {
+            "paths": [
+                "metadata/view/beer.FriendsList",
+                "app/view/override/beer/FriendsList.js",
+                "app/view/beer/FriendsList.js"
+            ],
+            "className": "beer.FriendsList"
+        },
+        "b27d8d6f-8127-4c66-812f-a6df24a514c6": {
+            "paths": [
+                "metadata/controller/Beers",
+                "app/controller/override/Beers.js",
+                "app/controller/Beers.js"
+            ],
+            "className": "Beers"
+        },
+        "c5ac39a5-4705-4b57-a4a0-13316142fff1": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
+        },
+        "9589c696-a959-4eb4-9e40-3217b3e226cb": {
+            "paths": [
+                "metadata/view/friends.Detail",
+                "app/view/override/friends/Detail.js",
+                "app/view/friends/Detail.js"
+            ],
+            "className": "friends.Detail"
+        },
+        "66bc8dd7-526d-43e7-9836-a6286149a6c1": {
+            "paths": [
+                "metadata/store/Excuses",
+                "app/store/override/Excuses.js",
+                "app/store/Excuses.js"
+            ],
+            "className": "Excuses"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "6b85ba3c-0d03-430f-8613-108f4633ad33",
+            "e92462fe-dcc0-4f0f-aaf0-cc84d1dac989",
+            "6c6650ba-8bee-418d-8b36-0473d3797660",
+            "6270d421-3858-445a-8a45-ebed20dcbfef",
+            "57fc704b-6232-41b7-85c1-f8c90606d787",
+            "9589c696-a959-4eb4-9e40-3217b3e226cb"
+        ],
+        "store": [
+            "90f67926-6bf1-49fb-8c62-b68a059d0b91",
+            "28e089b1-6ac6-46a4-a18b-baaf6e1dd8f4",
+            "66bc8dd7-526d-43e7-9836-a6286149a6c1"
+        ],
+        "controller": [
+            "fa9156dc-098e-40d1-aca0-6e09ffa81878",
+            "a6dcaf22-eb18-442d-b365-4a9ee695b10c",
+            "b27d8d6f-8127-4c66-812f-a6df24a514c6"
+        ],
+        "model": [
+            "ed2df0a5-8d92-4c3c-948f-b33ccaee4463",
+            "e45f4b83-18de-418c-9001-8eefeac871db"
+        ],
+        "resource": [
+            "7ea10723-9d5d-44bb-8dab-349e6e607abe",
+            "62e1aca3-f9b8-4b5e-845d-bde9ad112eee",
+            "c5ac39a5-4705-4b57-a4a0-13316142fff1"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

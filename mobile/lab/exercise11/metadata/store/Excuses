@@ -1,0 +1,59 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "storeId": "Excuses",
+        "designer|userClassName": "Excuses",
+        "requires": [
+            "Ext.data.proxy.JsonP"
+        ]
+    },
+    "designerId": "66bc8dd7-526d-43e7-9836-a6286149a6c1",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "EXCUSE",
+                "designer|userClassName": "field14"
+            },
+            "designerId": "b3c3bf11-de24-4a4d-b709-f6767170182d"
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy1",
+                "url": "http://webapps.figleaf.com/arch101/dataservices/mobile/beer.cfc?method=getExcuses"
+            },
+            "designerId": "b9296235-deaa-4b59-bfee-9f26ed18d9d5",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader1"
+                    },
+                    "designerId": "1ae19d60-c132-4834-b585-b10a05e38fec"
+                }
+            ]
+        }
+    ]
+}

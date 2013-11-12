@@ -1,0 +1,72 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "designer|userAlias": "main",
+        "designer|initialView": true
+    },
+    "designerId": "6b85ba3c-0d03-430f-8613-108f4633ad33",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "About",
+                "iconCls": "info"
+            },
+            "designerId": "17a46ea6-2056-4bf4-bdf3-86a8c9b07dcb",
+            "masterInstanceId": "e92462fe-dcc0-4f0f-aaf0-cc84d1dac989"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Friends",
+                "iconCls": "user_list",
+                "designer|userClassName": "MyContainer1"
+            },
+            "designerId": "642afd6b-fc35-4e11-9d75-d59f2dbe0a91"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 3",
+                "iconCls": "info",
+                "designer|userClassName": "MyContainer2"
+            },
+            "designerId": "6c6650ba-8bee-418d-8b36-0473d3797660"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "docked": "bottom",
+                "designer|userClassName": "MyTabBar"
+            },
+            "designerId": "b9f092a0-796e-4e94-b90c-44b21ebf38fe"
+        }
+    ]
+}

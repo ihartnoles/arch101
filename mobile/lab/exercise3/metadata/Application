@@ -1,0 +1,51 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "requires": [
+            "Ext.MessageBox"
+        ],
+        "icon": [
+            "{\r",
+            " 57: 'resources/icons/Icon.png',\r",
+            " 72: 'resources/icons/Icon~ipad.png',\r",
+            " 114: 'resources/icons/Icon@2x.png',\r",
+            " 144: 'resources/icons/Icon~ipad@2x.png'\r",
+            "}"
+        ],
+        "name": "FriendsWithBeer",
+        "startupImage": [
+            "    {\r",
+            "    '320x460': 'resources/startup/320x460.jpg',\r",
+            "    '640x920': 'resources/startup/640x920.png',\r",
+            "    '640x1096': 'resources/startup/640x1096.png',\r",
+            "    '768x1004': 'resources/startup/768x1004.png',\r",
+            "    '748x1024': 'resources/startup/748x1024.png',\r",
+            "    '1536x2008': 'resources/startup/1536x2008.png',\r",
+            "    '1496x2048': 'resources/startup/1496x2048.png'\r",
+            "    } "
+        ]
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "Ext.Msg.alert('Application Launch','Success!');"
+                ]
+            },
+            "designerId": "2cfa32d9-f67a-4baa-ae29-88b8b5de4d8f"
+        }
+    ]
+}

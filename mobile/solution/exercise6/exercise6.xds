@@ -1,0 +1,120 @@
+{
+    "name": "exercise6",
+    "settings": {
+        "urlPrefix": "http://localhost/arch101/mobile/solution/exercise6",
+        "spacesToIndent": 4,
+        "exportPath": "/Library/WebServer/Documents/arch101/mobile/solution/exercise4_deploy",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 908,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000499,
+    "framework": "touch21",
+    "topInstanceFileMap": {
+        "6b85ba3c-0d03-430f-8613-108f4633ad33": {
+            "paths": [
+                "metadata/view/Main",
+                "app/view/override/Main.js",
+                "app/view/Main.js"
+            ],
+            "className": "Main"
+        },
+        "e92462fe-dcc0-4f0f-aaf0-cc84d1dac989": {
+            "paths": [
+                "metadata/view/Introduction",
+                "app/view/override/Introduction.js",
+                "app/view/Introduction.js"
+            ],
+            "className": "Introduction"
+        },
+        "7ea10723-9d5d-44bb-8dab-349e6e607abe": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "62e1aca3-f9b8-4b5e-845d-bde9ad112eee": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "fa9156dc-098e-40d1-aca0-6e09ffa81878": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        },
+        "90f67926-6bf1-49fb-8c62-b68a059d0b91": {
+            "paths": [
+                "metadata/store/Beers",
+                "app/store/override/Beers.js",
+                "app/store/Beers.js"
+            ],
+            "className": "Beers"
+        },
+        "ed2df0a5-8d92-4c3c-948f-b33ccaee4463": {
+            "paths": [
+                "metadata/model/Beer",
+                "app/model/override/Beer.js",
+                "app/model/Beer.js"
+            ],
+            "className": "Beer"
+        },
+        "28e089b1-6ac6-46a4-a18b-baaf6e1dd8f4": {
+            "paths": [
+                "metadata/store/Friends",
+                "app/store/override/Friends.js",
+                "app/store/Friends.js"
+            ],
+            "className": "Friends"
+        },
+        "e45f4b83-18de-418c-9001-8eefeac871db": {
+            "paths": [
+                "metadata/model/Friend",
+                "app/model/override/Friend.js",
+                "app/model/Friend.js"
+            ],
+            "className": "Friend"
+        },
+        "6c6650ba-8bee-418d-8b36-0473d3797660": {
+            "paths": [
+                "metadata/view/beer.List",
+                "app/view/override/beer/List.js",
+                "app/view/beer/List.js"
+            ],
+            "className": "beer.List"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "6b85ba3c-0d03-430f-8613-108f4633ad33",
+            "e92462fe-dcc0-4f0f-aaf0-cc84d1dac989",
+            "6c6650ba-8bee-418d-8b36-0473d3797660"
+        ],
+        "store": [
+            "90f67926-6bf1-49fb-8c62-b68a059d0b91",
+            "28e089b1-6ac6-46a4-a18b-baaf6e1dd8f4"
+        ],
+        "controller": [
+            "fa9156dc-098e-40d1-aca0-6e09ffa81878"
+        ],
+        "model": [
+            "ed2df0a5-8d92-4c3c-948f-b33ccaee4463",
+            "e45f4b83-18de-418c-9001-8eefeac871db"
+        ],
+        "resource": [
+            "7ea10723-9d5d-44bb-8dab-349e6e607abe",
+            "62e1aca3-f9b8-4b5e-845d-bde9ad112eee"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

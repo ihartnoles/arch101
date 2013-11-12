@@ -1,0 +1,230 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Friend"
+        ],
+        "stores": [
+            "Friends"
+        ],
+        "designer|userClassName": "Friends"
+    },
+    "designerId": "a6dcaf22-eb18-442d-b365-4a9ee695b10c",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "friendsView",
+                "ref": "friendsView",
+                "selector": "tabpanel > #friends"
+            },
+            "designerId": "f6544ea9-d4fe-4238-ab58-f205d413db07"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "btnAddFriend",
+                "ref": "btnAddFriend",
+                "selector": "button#btnAddFriend"
+            },
+            "designerId": "d4423f4e-0f17-4af0-a4ae-b340a2af4018"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "btnBackToFriendList",
+                "ref": "btnBackToFriendList",
+                "selector": "button#btnBackToFriendList "
+            },
+            "designerId": "c2f61808-3c5f-4aee-b26f-dcfef2dc45c3"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "friendForm",
+                "ref": "friendForm",
+                "selector": "formpanel#friendForm"
+            },
+            "designerId": "3b8eabad-c1c3-43b5-94ae-480b328f075c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnAddFriendTap",
+                "fn": "onBtnAddFriendTap",
+                "implHandler": [
+                    "this.getFriendForm().setRecord(",
+                    "Ext.create('FriendsWithBeer.model.Friend')",
+                    ");",
+                    "this.getFriendForm().reset();",
+                    "this.onGoToForm();",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "btnAddFriend"
+            },
+            "designerId": "3fe0c37a-6138-484a-82a3-eb6db38b848f"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onGoToForm",
+                "fn": "onGoToForm",
+                "implHandler": [
+                    "// hide add button",
+                    "this.getBtnAddFriend().setHidden(true);",
+                    "// show \"back\" button",
+                    "this.getBtnBackToFriendList().setHidden(false);",
+                    "// toggle the view",
+                    "this.getFriendsView().setActiveItem(1);"
+                ]
+            },
+            "designerId": "62308a2b-85a1-45f6-9a6c-deedcbac696c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnSaveContactTap",
+                "fn": "onBtnSaveContactTap",
+                "implHandler": [
+                    "// update model instance with data from form",
+                    "var form = button.up('formpanel');",
+                    "var rec = form.getRecord();",
+                    "rec.set(form.getValues());",
+                    "",
+                    "// validate model",
+                    "var errors = rec.validate();",
+                    "",
+                    "if (!errors.isValid()) {",
+                    "    // at least one error occurred",
+                    "    var errorMsg = \"\";",
+                    "    console.log(errors);",
+                    "    errors.each(function (errorObj) {",
+                    "        errorMsg += errorObj.getField() + \" \" + errorObj.getMessage() + \"<br>\"; ",
+                    "    });",
+                    "    Ext.Msg.alert(\"Doh!\", errorMsg);",
+                    "} else {",
+                    "    // check to see if new record",
+                    "    if (rec.phantom) {",
+                    "        Ext.getStore('Friends').add(rec);",
+                    "    } ",
+                    "    // commit changes  ",
+                    "    Ext.getStore('Friends').sync();",
+                    "    this.onGoToList();",
+                    "}"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#btnSaveContact"
+            },
+            "designerId": "037eb62f-4201-454e-95b7-37cc338c4f2c"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onGoToList",
+                "fn": "onGoToList",
+                "implHandler": [
+                    "// show add button",
+                    "this.getBtnAddFriend().setHidden(false);",
+                    "// hide back button",
+                    "this.getBtnBackToFriendList().setHidden(true);",
+                    "// toggle visability of the list view",
+                    "this.getFriendsView().setActiveItem(0);"
+                ]
+            },
+            "designerId": "9213b36b-18c4-4bed-9b29-cf6b7d076fd2"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onFriendsListItemTap",
+                "fn": "onFriendsListItemTap",
+                "implHandler": [
+                    "this.getFriendForm().setRecord(record);",
+                    "this.onGoToForm();",
+                    "    "
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "list#friendsList"
+            },
+            "designerId": "46199ed1-7b67-4b6e-9b69-1bad39ccd0be"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnDeleteContactTap",
+                "fn": "onBtnDeleteContactTap",
+                "implHandler": [
+                    "var rec = this.getFriendForm().getRecord();",
+                    "if (!rec.phantom) {",
+                    "    Ext.getStore('Friends').remove(rec);",
+                    "}",
+                    "Ext.getStore('Friends').sync();",
+                    "this.onGoToList();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#btnDeleteContact"
+            },
+            "designerId": "409748de-3f4b-45a6-807a-ff24bc7526d3"
+        }
+    ]
+}

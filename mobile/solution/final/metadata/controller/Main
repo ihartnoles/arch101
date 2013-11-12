@@ -1,0 +1,78 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "views": [
+            "Main",
+            "Introduction"
+        ]
+    },
+    "id": "ExtBox1-ext-gen3002",
+    "designerId": "fa9156dc-098e-40d1-aca0-6e09ffa81878",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "btnNoShow",
+                "ref": "btnNoShow",
+                "selector": "intro button#noShow"
+            },
+            "designerId": "de580a0a-356e-4f93-968e-4950018c5fdb"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "mainTabPanel",
+                "ref": "mainTabPanel",
+                "selector": "main"
+            },
+            "designerId": "0cbe1e2d-1717-4d49-a4c0-dd80a394ad4a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onNoShowTap",
+                "fn": "onNoShowTap",
+                "implHandler": [
+                    "// persist user preference",
+                    "window.localStorage.setItem('FriendsWithBeer_NoShowIntro',true);",
+                    "",
+                    "// get pointer to container to destroy",
+                    "var objView = button.up('intro');",
+                    "",
+                    "// Remove the container from the tabpanel",
+                    "this.getMainTabPanel().removeAt(0);",
+                    "",
+                    "// Destroy the view after a brief delay",
+                    "Ext.Function.defer(function(){",
+                    "    objView.destroy();",
+                    "}, 500);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "btnNoShow"
+            },
+            "designerId": "da393487-d58a-420d-b6b2-61ac337766df"
+        }
+    ]
+}

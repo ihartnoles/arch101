@@ -1,0 +1,28 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "beer.Beer",
+        "designer|userAlias": "beer"
+    },
+    "designerId": "6270d421-3858-445a-8a45-ebed20dcbfef",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Beers"
+            },
+            "designerId": "223ade2b-76f3-4bc5-ab2f-e227f1ed6556",
+            "masterInstanceId": "6c6650ba-8bee-418d-8b36-0473d3797660"
+        }
+    ]
+}

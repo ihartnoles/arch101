@@ -1,0 +1,22 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "height": 250,
+        "width": 500,
+        "designer|userClassName": "Earmarks",
+        "designer|userAlias": "earmarks",
+        "constrain": true,
+        "layout": "border",
+        "closable": false,
+        "title": "Please Select Sponsor(s)",
+        "maximizable": true,
+        "minimizable": true
+    },
+    "designerId": "c581edd1-4d3e-48bb-bf94-0d409872beac"
+}

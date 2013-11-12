@@ -1,0 +1,70 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "Beer",
+        "storeId": "Beers",
+        "designer|userClassName": "Beers"
+    },
+    "designerId": "1f0538da-a1d6-4ff7-b4f2-d993693bb73e",
+    "cn": [
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "type"
+            },
+            "designerId": "01f82e77-fde5-470e-a480-bb12778c6c42"
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "name"
+            },
+            "designerId": "1d9c25f1-c63b-4d5c-954b-a3e3291b0bc6"
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "dcd22682-3f2b-461a-a43a-5b12a3ddf338",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "item"
+                        ],
+                        "implHandler": [
+                            "return item.get('type');"
+                        ]
+                    },
+                    "designerId": "19128c18-21bd-450f-8a33-d173077aded9"
+                }
+            ]
+        }
+    ]
+}

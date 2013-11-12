@@ -1,0 +1,120 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Beers",
+        "models": [
+            "Beer"
+        ],
+        "stores": [
+            "Beers"
+        ],
+        "views": [
+            "beer.Beer",
+            "beer.List",
+            "beer.FriendsList"
+        ]
+    },
+    "id": "ExtBox1-ext-gen22696",
+    "designerId": "b27d8d6f-8127-4c66-812f-a6df24a514c6",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBeerListItemTap",
+                "fn": "onBeerListItemTap",
+                "implHandler": [
+                    "if (!this.filteredStore) ",
+                    "this.filteredStore = Ext.create('FriendsWithBeer.store.Friends');",
+                    "",
+                    "this.filteredStore.clearFilter();",
+                    "this.filteredStore.filter('favoriteBeer',record.get('name'));",
+                    "this.filteredStore.load();",
+                    "",
+                    "dataview.up('navigationview').push({",
+                    "    xtype:  'beerfriendslist',",
+                    "    title: 'Friends with ' + record.get('name'),",
+                    "    store: this.filteredStore",
+                    "});"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "beer > beerlist"
+            },
+            "designerId": "ffc23d1a-e417-4f71-bbc0-fe5ecab33538"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "searchByBeerView",
+                "ref": "searchByBeerView",
+                "selector": "beer"
+            },
+            "designerId": "8a35ed01-8b13-4ba2-aab2-9384a025924b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onNavigationviewPop",
+                "fn": "onNavigationviewPop",
+                "implHandler": [
+                    "",
+                    "if (view.getXTypes().indexOf('beerfriendslist')) {",
+                    "    // debugger;",
+                    "}",
+                    "view.destroy();"
+                ],
+                "name": "pop",
+                "designer|targetType": "Ext.navigation.View",
+                "designer|controlQuery": "searchByBeerView"
+            },
+            "designerId": "79f9a91c-83ab-40ed-b9d1-e4f4c83e9d2a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBeerFriendsListItemTap",
+                "fn": "onBeerFriendsListItemTap",
+                "implHandler": [
+                    "var store = Ext.getStore('Excuses');",
+                    "var itemNumber = Math.floor(Math.random() * (store.getCount()))",
+                    "",
+                    "dataview.up('navigationview').push({",
+                    "    xtype: 'friendsdetail',",
+                    "    title: record.get('firstName') + ' ' + record.get('lastName'),",
+                    "    rec: record,",
+                    "    excuse: store.getAt(itemNumber).get(\"EXCUSE\")",
+                    "});"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "beerfriendslist"
+            },
+            "designerId": "13e66d55-05b4-4431-b78c-1796163e1995"
+        }
+    ]
+}

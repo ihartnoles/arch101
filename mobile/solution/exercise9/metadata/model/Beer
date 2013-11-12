@@ -1,0 +1,96 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Beer",
+        "requires": [
+            "Ext.data.proxy.JsonP"
+        ]
+    },
+    "designerId": "ed2df0a5-8d92-4c3c-948f-b33ccaee4463",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "designer|userClassName": "field"
+            },
+            "designerId": "3a7e187f-786e-4c31-a9fe-7d49235fb841"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "designer|userClassName": "field1"
+            },
+            "designerId": "670e10f7-0fb6-4bfc-afd0-c62b45173c7a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "type",
+                "designer|userClassName": "field2"
+            },
+            "designerId": "85271005-4219-42b4-954a-930d76b639aa"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "country",
+                "designer|userClassName": "field3"
+            },
+            "designerId": "f06cc0c3-269e-4358-a6ea-f65d5ca7ace6"
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy",
+                "url": "http://webapps.figleaf.com/arch101/dataservices/mobile/beer.cfc?method=getBeerList"
+            },
+            "designerId": "57b6c1dd-81de-4640-8b69-45941a5b68d9",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "designerId": "ed0bf538-da4e-449f-87aa-f0b40c16db9f"
+                }
+            ]
+        }
+    ]
+}

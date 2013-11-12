@@ -1,0 +1,53 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Person"
+    },
+    "designerId": "a6be4684-1ccd-4ba5-a04b-a0f4c44f3a49",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "firstName",
+                "designer|userClassName": "field"
+            },
+            "designerId": "4ce14e8f-bda8-469a-850c-d3085eacb004"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lastName",
+                "designer|userClassName": "field1"
+            },
+            "designerId": "5ae079da-5371-4c41-94e2-023705a18c4a"
+        },
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyLocalStorageProxy",
+                "id": "arch101demo"
+            },
+            "designerId": "bddf4812-ba4d-4cc8-9f2a-1f502e684a29"
+        }
+    ]
+}

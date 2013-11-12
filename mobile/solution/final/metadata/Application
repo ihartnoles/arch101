@@ -1,0 +1,21 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "requires": [
+            "Ext.MessageBox"
+        ],
+        "name": "FriendsWithBeer",
+        "controllers": [
+            "Main",
+            "Friends",
+            "Beers"
+        ]
+    },
+    "id": "ExtBox1-ext-gen2239",
+    "designerId": "application"
+}

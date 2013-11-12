@@ -1,0 +1,121 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Friend",
+        "requires": [
+            "Ext.data.proxy.LocalStorage"
+        ]
+    },
+    "designerId": "e45f4b83-18de-418c-9001-8eefeac871db",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "firstName",
+                "designer|userClassName": "field4"
+            },
+            "designerId": "12637768-7d46-46b1-8f09-42a529b29f7d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lastName",
+                "designer|userClassName": "field5"
+            },
+            "designerId": "6aaff3c8-3fee-432f-83ff-8a0f1135a5f9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "address",
+                "designer|userClassName": "field6"
+            },
+            "designerId": "feef57c3-d93b-4e6b-a94b-8e00a6a4dc9a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "zip",
+                "designer|userClassName": "field7"
+            },
+            "designerId": "985ca01b-3938-489e-a389-a1ced34b886b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "email",
+                "designer|userClassName": "field8"
+            },
+            "designerId": "4641cbb4-4bf7-4f3d-bfdb-991f1f934369"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "phone",
+                "designer|userClassName": "field9"
+            },
+            "designerId": "4751df4b-f023-42db-ae79-59b0161d5332"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "favoriteBeer",
+                "designer|userClassName": "field10"
+            },
+            "designerId": "76aca588-a5d8-483e-ae00-e5863177536c"
+        },
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyLocalStorageProxy",
+                "id": "FriendsWithBeerContacts"
+            },
+            "designerId": "a64fc17f-f25f-48a5-8704-52017aedf1cb"
+        }
+    ]
+}

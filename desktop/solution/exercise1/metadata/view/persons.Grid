@@ -1,0 +1,148 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 250,
+        "width": 400,
+        "designer|userClassName": "persons.Grid",
+        "designer|userAlias": "personsgrid",
+        "designer|initialView": true,
+        "title": "Edit Records",
+        "store": "Persons"
+    },
+    "designerId": "5b066047-7d6c-4665-b7c3-7130b576565d",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn",
+                "dataIndex": "firstName",
+                "text": "First Name",
+                "flex": 1
+            },
+            "designerId": "bb5167c0-6376-43fb-b0a6-64b9f1eeb95e",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTextField"
+                    },
+                    "designerId": "47587fcf-1a29-4b53-b3d3-bb4b53b525d4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn1",
+                "dataIndex": "lastName",
+                "text": "Last Name",
+                "flex": 1
+            },
+            "designerId": "1996b221-4d6a-4015-95ff-f57e785b5138",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTextField1"
+                    },
+                    "designerId": "0236b2e3-8e4a-475d-8760-e4c8ffdf4a9d"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView"
+            },
+            "designerId": "8f0db7ff-c8fa-4770-af3c-43dc6feb8283"
+        },
+        {
+            "type": "Ext.grid.plugin.RowEditing",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": "Ext.grid.plugin.RowEditing",
+            "userConfig": {
+                "pluginId": "personsGridEditor",
+                "designer|userClassName": "MyRowEditingPlugin"
+            },
+            "designerId": "46a0954e-8426-44db-a189-0703e549ac29"
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "designer|userClassName": "MyToolbar"
+            },
+            "designerId": "5991b19a-7be3-4060-ae36-195d49349bc2",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "itemId": "btnAdd",
+                        "designer|userClassName": "MyButton",
+                        "text": "Add Record"
+                    },
+                    "designerId": "bc629da0-22bf-493e-8aa1-c19a7c067784"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "itemId": "btnDel",
+                        "designer|userClassName": "MyButton1",
+                        "text": "Delete Record"
+                    },
+                    "designerId": "0a992681-3d2a-4b51-92f5-bf1483a567c1"
+                }
+            ]
+        }
+    ]
+}

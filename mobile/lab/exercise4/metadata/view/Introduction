@@ -1,0 +1,59 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "styleHtmlContent": true,
+        "designer|userClassName": "Introduction",
+        "designer|userAlias": "intro",
+        "scrollable": true
+    },
+    "designerId": "97410dc8-f46a-496c-af33-6af1890938ae",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "About Friends with Beer"
+            },
+            "designerId": "b195e73e-87c9-47d3-b963-3d2bfe0f4028"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": " <p>In these uncertain economic times you need to keep your friends close, and your beer even closer. </p><p>This app quickly identifies your pals who are most likely to have your favorite brew on ice. Then it auto-generates a bogus excuse for you coming to visit, dials your friend, and lets the good times roll!</p>  <p>No friends? No problem! Our app contains a video of \"virtual\" friends drinking, so you will never need to drink alone again!</p>",
+                "itemId": "content",
+                "styleHtmlContent": true,
+                "scrollable": null
+            },
+            "designerId": "4a8ab353-45c1-417a-ad29-1673640f4a2e"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "noShow",
+                "margin": "5 10 5 10",
+                "text": "Do Not Show Again"
+            },
+            "designerId": "2675e258-028c-4d2c-a714-9df131027ce5"
+        }
+    ]
+}

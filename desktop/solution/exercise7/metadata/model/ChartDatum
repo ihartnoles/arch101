@@ -1,0 +1,53 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ChartDatum"
+    },
+    "designerId": "d106127a-06c6-48b5-95b1-0c8bb94a542b",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "label",
+                "designer|userClassName": "field17"
+            },
+            "designerId": "bc3741b9-2973-47d0-9df2-1e033fd5e061"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "value",
+                "designer|userClassName": "field18"
+            },
+            "designerId": "e6407a6c-1efe-4f1b-a234-94041ac75d34"
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy2",
+                "url": "http://webapps.figleaf.com/arch101/dataservices/desktop/earmark.cfc?method=getSponsorStats"
+            },
+            "designerId": "837ba851-f6fc-459b-8182-3382e5b3f0ac"
+        }
+    ]
+}

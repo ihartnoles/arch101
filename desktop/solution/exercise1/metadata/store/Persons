@@ -1,0 +1,16 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "model": "Person",
+        "storeId": "Persons",
+        "designer|userClassName": "Persons"
+    },
+    "designerId": "de2f92c9-4d49-41d3-8ace-a01c64806d8d"
+}

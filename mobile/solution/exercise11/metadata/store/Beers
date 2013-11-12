@@ -1,0 +1,76 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "Beer",
+        "storeId": "Beers",
+        "designer|userClassName": "Beers"
+    },
+    "designerId": "90f67926-6bf1-49fb-8c62-b68a059d0b91",
+    "cn": [
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "type",
+                "designer|userClassName": "MySorter"
+            },
+            "designerId": "9e429190-d3cb-4088-89a6-7e244d316936"
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "name",
+                "designer|userClassName": "MySorter1"
+            },
+            "designerId": "91e2673b-d455-4b62-a004-5af82b590300"
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGrouper"
+            },
+            "designerId": "f43fb855-ea74-4805-b3e6-c64ad5e5e1ef",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "groupFn",
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "record"
+                        ],
+                        "implHandler": [
+                            "return record.get('type');"
+                        ]
+                    },
+                    "designerId": "0bbf6f85-415d-4664-91b3-56efb7b1e683"
+                }
+            ]
+        }
+    ]
+}

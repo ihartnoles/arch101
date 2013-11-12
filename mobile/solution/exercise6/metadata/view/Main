@@ -1,0 +1,173 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "designer|userAlias": "main",
+        "designer|initialView": true
+    },
+    "designerId": "6b85ba3c-0d03-430f-8613-108f4633ad33",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "About",
+                "iconCls": "info"
+            },
+            "designerId": "17a46ea6-2056-4bf4-bdf3-86a8c9b07dcb",
+            "masterInstanceId": "e92462fe-dcc0-4f0f-aaf0-cc84d1dac989"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Friends",
+                "container|animation": "fade",
+                "iconCls": "user_list",
+                "designer|userClassName": "MyContainer1",
+                "layout": "card"
+            },
+            "designerId": "642afd6b-fc35-4e11-9d75-d59f2dbe0a91",
+            "cn": [
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "itemId": "friendstoolbar",
+                        "designer|userClassName": "MyTitleBar1",
+                        "title": "Friends with Beer"
+                    },
+                    "designerId": "2ac35a1e-3cd6-4947-ba2b-6b65ebec09ce",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "right",
+                                "itemId": "btnAddFriend",
+                                "designer|userClassName": "MyButton1",
+                                "iconCls": "user_add",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "7557bef2-b5cd-42e3-a625-bf3be2d8424c"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "itemId": "btnBackToFriendList",
+                                "ui": "back",
+                                "designer|userClassName": "MyButton2",
+                                "text": "Back"
+                            },
+                            "designerId": "3df22078-ef94-4418-89e2-47b04242d493"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "friendsList",
+                        "designer|userClassName": "MyList1",
+                        "emptyText": "No Records Found",
+                        "store": "Friends",
+                        "grouped": true,
+                        "onItemDisclosure": true
+                    },
+                    "designerId": "8ea66cc6-2b66-4121-9cde-750fb023c5b7",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "itemTpl",
+                                "implHandler": [
+                                    "{lastName}, {firstName}<br />{favoriteBeer}"
+                                ],
+                                "designer|displayName": "itemTpl"
+                            },
+                            "designerId": "dc4c9024-0f72-4614-b3ed-4f5b19faa391"
+                        },
+                        {
+                            "type": "Ext.dataview.IndexBar",
+                            "reference": {
+                                "name": "indexBar",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyIndexBar"
+                            },
+                            "designerId": "9d4006e4-90d3-4d4e-b7ab-3099ab449a96"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Beers",
+                "iconCls": "search"
+            },
+            "designerId": "f16f62e1-d812-4512-8efd-5c8c47141daf",
+            "masterInstanceId": "6c6650ba-8bee-418d-8b36-0473d3797660"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "docked": "bottom",
+                "designer|userClassName": "MyTabBar"
+            },
+            "designerId": "b9f092a0-796e-4e94-b90c-44b21ebf38fe"
+        }
+    ]
+}

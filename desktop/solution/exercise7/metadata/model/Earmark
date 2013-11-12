@@ -1,0 +1,186 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "idProperty": "EARMARK_ID",
+        "designer|userClassName": "Earmark"
+    },
+    "designerId": "48d1e41c-2589-41d9-a2e6-c6374afd6fff",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "EARMARK_ID",
+                "designer|userClassName": "field6"
+            },
+            "designerId": "78f4bad4-17bb-4fae-8e02-59128edc4098"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "EARMARK_DESCRIPTION",
+                "designer|userClassName": "field7"
+            },
+            "designerId": "3c6b3c80-129e-486d-8247-d6789518e3f1"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ENACTED_YEAR",
+                "designer|userClassName": "field8"
+            },
+            "designerId": "9ea92420-542f-456c-9b61-b7e16de81cbb"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "AGENCY_TITLE",
+                "designer|userClassName": "field9"
+            },
+            "designerId": "b87a0a8f-0c8a-47bb-a8f3-8e7849d901dc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "BUREAU_TITLE",
+                "designer|userClassName": "field10"
+            },
+            "designerId": "0c65aa3e-754f-40ed-90a1-09b24a4d5099"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "AMT_CONF",
+                "designer|userClassName": "field11"
+            },
+            "designerId": "26461ef4-99da-4939-885d-71a5919625be"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "SPONSOR",
+                "designer|userClassName": "field12"
+            },
+            "designerId": "4605b1cb-efbd-417a-b3c9-575eea729b3b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "SPENDINGCOMMITTEE",
+                "designer|userClassName": "field13"
+            },
+            "designerId": "cbb6a987-97c1-4787-8372-25fdfc5f46f3"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "SPONSORNAME",
+                "designer|userClassName": "field14"
+            },
+            "designerId": "9a794069-74e8-4512-8d30-2e2ba01985c7",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "convert",
+                        "fn": "convert",
+                        "designer|params": [
+                            "v",
+                            "rec"
+                        ],
+                        "implHandler": [
+                            "return Ext.String.format(\"{0}, {1}\", ",
+                            "                         rec.get('SPONSOR').LASTNAME,",
+                            "                         rec.get('SPONSOR').FIRSTNAME);"
+                        ]
+                    },
+                    "designerId": "e1c869d6-6145-4cc2-92b8-c1df1b8d691b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy1",
+                "url": "http://webapps.figleaf.com/arch101/dataservices/desktop/earmark.cfc?method=wsBigJSONP"
+            },
+            "designerId": "d7bbbbec-c95d-4050-8438-ab0576acd1e5",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "ROWS",
+                        "successProperty": "SUCCESS",
+                        "totalProperty": "RESULTS",
+                        "designer|userClassName": "MyJsonReader1"
+                    },
+                    "designerId": "9134d2c3-3def-4ac2-b9c9-d71cc2cc46eb"
+                }
+            ]
+        }
+    ]
+}

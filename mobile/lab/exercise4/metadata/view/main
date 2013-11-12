@@ -1,0 +1,70 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|animation": "slide",
+        "designer|userClassName": "main",
+        "designer|userAlias": "main",
+        "designer|initialView": true
+    },
+    "designerId": "10f979cb-a5ac-4e2b-9576-9b9ff61e3783",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "About",
+                "iconCls": "info"
+            },
+            "designerId": "54a50f3e-3931-42d7-b326-3177e63c4db1",
+            "masterInstanceId": "97410dc8-f46a-496c-af33-6af1890938ae"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 2",
+                "iconCls": "info"
+            },
+            "designerId": "6b8abf13-31e2-4af7-a4c9-74a600411465"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 3",
+                "iconCls": "info"
+            },
+            "designerId": "2fc9d4dd-eb71-4593-a132-66f99b196fe6"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "docked": "bottom"
+            },
+            "designerId": "356815db-be5a-4929-8dae-3665ede29476"
+        }
+    ]
+}

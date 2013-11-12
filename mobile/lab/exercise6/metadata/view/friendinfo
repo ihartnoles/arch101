@@ -1,0 +1,44 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": false,
+        "html": "",
+        "designer|userClassName": "friendinfo",
+        "designer|userAlias": "friendinfo"
+    },
+    "designerId": "4b7e5548-9232-4c73-b795-d3724a056034",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Friend Info"
+            },
+            "designerId": "85582abf-a790-4403-a311-10deaa173295"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "<h3>Wahmbulance!</h3>",
+                "itemId": "friendcontent",
+                "styleHtmlContent": true
+            },
+            "designerId": "7a28c5d2-222d-4504-bf49-2ede1653fd49"
+        }
+    ]
+}

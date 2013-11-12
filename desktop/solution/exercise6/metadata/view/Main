@@ -1,0 +1,89 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "designer|initialView": true,
+        "layout": "border"
+    },
+    "designerId": "fe88b2f8-a2cc-4f5b-97f3-7b04256accd4",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|floatable": false,
+                "layout|region": "north",
+                "height": null,
+                "designer|userClassName": "MyToolbar"
+            },
+            "designerId": "9f32c0a4-d47a-49c7-894a-aa9de711d5cb",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.TextItem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyTextItem",
+                        "text": "Congressional Earmark Browser"
+                    },
+                    "designerId": "080d4085-14a0-4cd9-a09d-19ebe5253d20"
+                },
+                {
+                    "type": "Ext.toolbar.Fill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyFill"
+                    },
+                    "designerId": "b31d48e4-a5bf-4a80-b65e-0f6a5835ff9d"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton",
+                        "text": "Feedback"
+                    },
+                    "designerId": "9837cfbd-004c-418c-a709-65d08ac2534d"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "itemId": "centerpanel",
+                "designer|userClassName": "MyPanel",
+                "title": null
+            },
+            "designerId": "9f59e0a6-74b7-48b0-bc52-7a3f863bd470"
+        }
+    ]
+}

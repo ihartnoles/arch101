@@ -1,0 +1,97 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Person"
+        ],
+        "stores": [
+            "Persons"
+        ],
+        "views": [
+            "persons.Grid"
+        ],
+        "designer|userClassName": "Persons"
+    },
+    "designerId": "c124437f-5b55-444d-9778-2a86c60d3b6f",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnAddClick",
+                "fn": "onBtnAddClick",
+                "implHandler": [
+                    "var grid = this.getPersonsGrid();",
+                    "var plugin = grid.getPlugin('personsGridEditor');",
+                    "plugin.cancelEdit();",
+                    "",
+                    "var rec = Ext.create('MyApp.model.Person', {",
+                    "    firstName: '', ",
+                    "    lastName: ''",
+                    "});",
+                    "Ext.getStore('Persons').insert(0,rec);",
+                    "plugin.startEdit(0,0);",
+                    "",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "personsgrid #btnAdd"
+            },
+            "designerId": "9721942a-69fc-49c8-9e6c-3ada3e618ce6"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "personsGrid",
+                "ref": "personsGrid",
+                "selector": "personsgrid"
+            },
+            "designerId": "d3ed0d9b-74d5-4b7c-8b23-688f8d5a6d47"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnDelClick",
+                "fn": "onBtnDelClick",
+                "implHandler": [
+                    "var grid = this.getPersonsGrid();",
+                    "var plugin = grid.getPlugin('personsGridEditor');",
+                    "var store = grid.getStore();",
+                    "var sm = grid.getSelectionModel();",
+                    "",
+                    "plugin.cancelEdit();",
+                    "store.remove(sm.getSelection());",
+                    "if (store.getCount() > 0) {",
+                    "    sm.select(0);",
+                    "}"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#btnDel"
+            },
+            "designerId": "4abd5017-df8e-4f0c-9048-408d22d6ef4c"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "main",
+            "Introduction"
+        ],
+        "designer|userClassName": "Main"
+    },
+    "designerId": "bf78382d-8836-4f37-b039-e2e7baf5f6cc",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "btnNoShow",
+                "selector": " intro button#noShow"
+            },
+            "designerId": "981e35ff-80e6-4ecd-9ea4-25a759009d5a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainTabPanel",
+                "selector": "main"
+            },
+            "designerId": "a1551664-258b-499c-b841-8fdd1ffd6831"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNoShowTap",
+                "implHandler": [
+                    "// get pointer to container to destroy",
+                    "var objView = button.up('intro');",
+                    "",
+                    "// Remove the container from the tabpanel",
+                    "this.getMainTabPanel().removeAt(0);",
+                    "",
+                    "// Destroy the view after the completion of ",
+                    "// the animated transition",
+                    "Ext.Function.defer(function(){",
+                    "   objView.destroy();",
+                    "}, 500);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#noShow"
+            },
+            "designerId": "c2758546-ef9b-4627-b1c1-3c31e243d90f"
+        }
+    ]
+}

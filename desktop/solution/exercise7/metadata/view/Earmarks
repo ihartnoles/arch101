@@ -1,0 +1,279 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "height": 250,
+        "width": 500,
+        "designer|userClassName": "Earmarks",
+        "designer|userAlias": "earmarks",
+        "constrain": true,
+        "layout": "border",
+        "closable": false,
+        "title": "Please Select Sponsor(s)",
+        "maximizable": true,
+        "minimizable": true
+    },
+    "designerId": "c581edd1-4d3e-48bb-bf94-0d409872beac",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "itemId": "earmarkGrid",
+                "designer|userClassName": "MyGridPanel1",
+                "frameHeader": false,
+                "title": null,
+                "columnLines": true,
+                "store": "Earmarks"
+            },
+            "designerId": "64368d4e-8957-424e-8066-43ab9367bf2d",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 50,
+                        "designer|userClassName": "MyNumberColumn1",
+                        "dataIndex": "ENACTED_YEAR",
+                        "text": "Year",
+                        "format": "0000"
+                    },
+                    "designerId": "98c2d0f4-ed28-4c27-bf70-d67e3ac89143"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn5",
+                        "dataIndex": "SPONSORNAME",
+                        "text": "Sponsor",
+                        "flex": 1
+                    },
+                    "designerId": "3ec194fe-df99-459a-b3f6-ede89d7a290a"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn5",
+                        "dataIndex": "AGENCY_TITLE",
+                        "text": "Agency",
+                        "flex": 1
+                    },
+                    "designerId": "6a502915-2ea0-4744-ab32-fd5e074abf9b"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn5",
+                        "dataIndex": "BUREAU_TITLE",
+                        "text": "Bureau",
+                        "flex": 1
+                    },
+                    "designerId": "e0e2c04b-b4a1-48e8-be12-1b3bfd4616d5"
+                },
+                {
+                    "type": "Ext.grid.column.Template",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "summaryType": "sum",
+                        "width": 100,
+                        "designer|userClassName": "MyTemplateColumn",
+                        "align": "right",
+                        "dataIndex": "AMT_CONF",
+                        "groupable": false,
+                        "text": "Amt"
+                    },
+                    "designerId": "a6232305-3e33-48ed-bf2b-8855ce151f19",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "tpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "tpl",
+                                "implHandler": [
+                                    "{[Ext.util.Format.usMoney(values.AMT_CONF * 1000)]}"
+                                ],
+                                "designer|displayName": "tpl"
+                            },
+                            "designerId": "f935a8c8-6f55-4b1f-a41a-2b578d261bc6"
+                        },
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "summaryRenderer",
+                                "fn": "summaryRenderer",
+                                "designer|params": [
+                                    "val",
+                                    "params",
+                                    "data"
+                                ],
+                                "implHandler": [
+                                    "return \"Total: \" + Ext.Number.toFixed(val / 1000,2) + \"M\";"
+                                ]
+                            },
+                            "designerId": "b545b9ac-d6fb-42fd-8c2a-60cd3e240c97"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyGridView1"
+                    },
+                    "designerId": "3dcd5194-695f-43cd-abf3-186f94d2300b"
+                },
+                {
+                    "type": "Ext.selection.RowModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.RowModel",
+                    "userConfig": {
+                        "designer|userClassName": "MyRowSelectionModel1"
+                    },
+                    "designerId": "97536e4d-12da-4e25-a5c0-cde85e6b418f",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onRowselectionmodelSelectionChange",
+                                "fn": "onRowselectionmodelSelectionChange",
+                                "implHandler": [
+                                    "var detailView = Ext.ComponentQuery.query('#earmarkdetail')[0];",
+                                    "detailView.update(selected[0].data);"
+                                ],
+                                "name": "selectionchange",
+                                "scope": "me"
+                            },
+                            "designerId": "ea0f9051-fd8f-4924-a0a7-9d24a5ffe083"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.feature.GroupingSummary",
+                    "reference": {
+                        "name": "features",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyGroupingSummaryFeature",
+                        "hideGroupedHeader": true
+                    },
+                    "designerId": "d95ca296-26d4-4fb3-bda7-40fda32777c2",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "groupHeaderTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "groupHeaderTpl",
+                                "implHandler": [
+                                    "{columnName}: {name} ({[values.rows.length]} Earmarks)"
+                                ],
+                                "designer|displayName": "groupHeaderTpl"
+                            },
+                            "designerId": "c17eb73e-dbbf-42f5-834b-9e8ed99c02ad"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "layout|region": "south",
+                "layout|split": true,
+                "height": 150,
+                "itemId": "earmarkdetail",
+                "designer|userClassName": "MyPanel1",
+                "autoScroll": true,
+                "collapseDirection": "bottom",
+                "collapsed": true,
+                "collapsible": true,
+                "title": "Details"
+            },
+            "designerId": "402e67fb-5c8d-4abd-a328-a069c92d8c0a",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": [
+                            "Sponsor: {SPONSOR.HONORIFIC} {SPONSOR.FIRSTNAME} {SPONSOR.LASTNAME} {SPONSOR.STATE}<br />",
+                            "<p>{EARMARK_DESCRIPTION}</p>"
+                        ],
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "c7c89bd9-f12e-4ea4-bb62-34bb51a453eb"
+                }
+            ]
+        }
+    ]
+}

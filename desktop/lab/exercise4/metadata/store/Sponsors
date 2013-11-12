@@ -1,0 +1,17 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "Sponsor",
+        "remoteFilter": true,
+        "storeId": "Sponsors",
+        "designer|userClassName": "Sponsors",
+        "pageSize": 600
+    },
+    "designerId": "86a809d2-c9a6-444f-9293-603fa5b553e9"
+}

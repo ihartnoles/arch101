@@ -1,0 +1,9 @@
+{
+    "type": "googlemapsjsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "designerId": "c5ac39a5-4705-4b57-a4a0-13316142fff1"
+}

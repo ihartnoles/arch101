@@ -1,0 +1,520 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "designer|userAlias": "main",
+        "requires": [
+            "Ext.Video",
+            "Ext.Map",
+            "Ext.form.Panel",
+            "Ext.form.FieldSet",
+            "Ext.field.Number",
+            "Ext.field.Email",
+            "Ext.field.Select",
+            "Ext.layout.Fit"
+        ],
+        "designer|initialView": true
+    },
+    "designerId": "6b85ba3c-0d03-430f-8613-108f4633ad33",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "About",
+                "iconCls": "info"
+            },
+            "designerId": "17a46ea6-2056-4bf4-bdf3-86a8c9b07dcb",
+            "masterInstanceId": "e92462fe-dcc0-4f0f-aaf0-cc84d1dac989"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Friends",
+                "container|animation": "fade",
+                "iconCls": "user_list",
+                "itemId": "friends",
+                "designer|userClassName": "MyContainer1",
+                "layout": "card"
+            },
+            "designerId": "642afd6b-fc35-4e11-9d75-d59f2dbe0a91",
+            "cn": [
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "itemId": "friendstoolbar",
+                        "designer|userClassName": "MyTitleBar1",
+                        "title": "Friends with Beer"
+                    },
+                    "designerId": "2ac35a1e-3cd6-4947-ba2b-6b65ebec09ce",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "right",
+                                "itemId": "btnAddFriend",
+                                "designer|userClassName": "MyButton1",
+                                "iconCls": "user_add",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "7557bef2-b5cd-42e3-a625-bf3be2d8424c"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "itemId": "btnBackToFriendList",
+                                "ui": "back",
+                                "designer|userClassName": "MyButton2",
+                                "text": "Back"
+                            },
+                            "designerId": "3df22078-ef94-4418-89e2-47b04242d493"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "friendsList",
+                        "designer|userClassName": "MyList1",
+                        "emptyText": "No Records Found",
+                        "store": "Friends",
+                        "grouped": true,
+                        "onItemDisclosure": true
+                    },
+                    "designerId": "8ea66cc6-2b66-4121-9cde-750fb023c5b7",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "itemTpl",
+                                "implHandler": [
+                                    "{lastName}, {firstName}<br />{favoriteBeer}"
+                                ],
+                                "designer|displayName": "itemTpl"
+                            },
+                            "designerId": "dc4c9024-0f72-4614-b3ed-4f5b19faa391"
+                        },
+                        {
+                            "type": "Ext.dataview.IndexBar",
+                            "reference": {
+                                "name": "indexBar",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyIndexBar"
+                            },
+                            "designerId": "9d4006e4-90d3-4d4e-b7ab-3099ab449a96"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldDefaults": [
+                            "{\"labelWidth\":150}"
+                        ],
+                        "itemId": "friendForm",
+                        "designer|userClassName": "MyFormPanel"
+                    },
+                    "designerId": "d8fcf37f-f4d9-44d3-96ed-7cf8f287cdb2",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "fieldDefaults",
+                            "type": "object"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyFieldSet",
+                                "title": "Contact"
+                            },
+                            "designerId": "fc54ae46-ac8d-4d9d-aa8c-f150c7d5a7e4",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyTextField",
+                                        "label": "Last Name",
+                                        "name": "lastName",
+                                        "required": true,
+                                        "autoCapitalize": true
+                                    },
+                                    "designerId": "3a4f2bc8-8c30-46c0-b94f-2bc9dc35063d"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyTextField1",
+                                        "label": "First Name",
+                                        "name": "firstName",
+                                        "required": true,
+                                        "autoCapitalize": true
+                                    },
+                                    "designerId": "09982599-073f-4448-b03d-438b3dbb5960"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyTextField2",
+                                        "label": "Address",
+                                        "name": "address",
+                                        "required": true
+                                    },
+                                    "designerId": "8e259f71-a981-47fb-99dc-b45d82dc8523"
+                                },
+                                {
+                                    "type": "Ext.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberField",
+                                        "label": "Zip",
+                                        "name": "zip",
+                                        "required": true
+                                    },
+                                    "designerId": "3e1ffaeb-cc3b-4831-955a-4d770b3409ee"
+                                },
+                                {
+                                    "type": "Ext.field.Email",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyEmailField",
+                                        "label": "Email",
+                                        "name": "email",
+                                        "required": true,
+                                        "placeHolder": "email@example.com"
+                                    },
+                                    "designerId": "8a13e559-8104-46db-8ac2-dfcb4766a100"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyTextField3",
+                                        "component": [
+                                            "{\"xtype\":\"input\",\"type\":\"tel\"}"
+                                        ],
+                                        "label": "Phone",
+                                        "name": "tel",
+                                        "required": true
+                                    },
+                                    "designerId": "7bb3b844-039b-4d36-9987-189ef7ca3d5e"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField4",
+                                "label": "Lat",
+                                "name": "lat",
+                                "required": true,
+                                "readOnly": true
+                            },
+                            "designerId": "8aeddc93-7d0f-48e2-9963-444fd12a0e3b"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField4",
+                                "label": "Lng",
+                                "name": "lng",
+                                "required": true,
+                                "readOnly": true
+                            },
+                            "designerId": "9a91bf3b-f3d6-4b4c-bd7a-abee3de7b92c"
+                        },
+                        {
+                            "type": "Ext.field.Select",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MySelectField",
+                                "designer|displayName": "name",
+                                "label": "Favorite Beer",
+                                "name": "favoriteBeer",
+                                "displayField": "name",
+                                "store": "Beers",
+                                "valueField": "name"
+                            },
+                            "designerId": "ab63c9e6-8c96-4db1-be5c-2867daa50695"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "buttonContainer",
+                                "margin": 5,
+                                "designer|userClassName": "MyContainer3",
+                                "defaults": [
+                                    "{ ui: 'amberBeerButton'}"
+                                ],
+                                "layout": "hbox"
+                            },
+                            "designerId": "c2a21985-c9be-41df-9e3f-78e1f52bc2d1",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "itemId": "btnGeoCode",
+                                        "margin": "0 5 0 0",
+                                        "designer|userClassName": "MyButton3",
+                                        "text": "Geo"
+                                    },
+                                    "designerId": "4e7e9a64-6a1d-4559-bd05-e520d88c96a2"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "itemId": "btnSaveContact",
+                                        "margin": "0 5 0 0",
+                                        "designer|userClassName": "MyButton3",
+                                        "text": "Save"
+                                    },
+                                    "designerId": "52fc3a88-425f-4b5b-b902-9945d451b29b"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "itemId": "btnDeleteContact",
+                                        "margin": 0,
+                                        "designer|userClassName": "MyButton3",
+                                        "text": "Delete"
+                                    },
+                                    "designerId": "8cafe41c-0076-4539-9820-c51bc1964d6e"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "docked": "bottom",
+                "designer|userClassName": "MyTabBar"
+            },
+            "designerId": "b9f092a0-796e-4e94-b90c-44b21ebf38fe"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Beers",
+                "iconCls": "search"
+            },
+            "designerId": "5dd98564-cb64-43eb-85cd-596fd4e37abf",
+            "masterInstanceId": "6270d421-3858-445a-8a45-ebed20dcbfef"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Beer Me!",
+                "iconCls": "phone_ring1",
+                "itemId": "friendrandomizer",
+                "designer|userClassName": "MyContainer8",
+                "layout": "fit"
+            },
+            "designerId": "6497e43b-676f-4509-9c3d-d2a2361ff330",
+            "cn": [
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "designer|userClassName": "MyTitleBar2",
+                        "title": "Friend Randomizer"
+                    },
+                    "designerId": "fc254caf-a4cf-4968-add0-a941d364512b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Drink",
+                "iconCls": "tv",
+                "container|align": "center",
+                "container|pack": "center",
+                "itemId": "friendsvideo",
+                "designer|userClassName": "MyContainer9",
+                "layout": "hbox"
+            },
+            "designerId": "adf67a5f-fe32-43ff-9ed6-d635c151c533",
+            "cn": [
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "designer|userClassName": "MyTitleBar3",
+                        "title": "Drink with Friends"
+                    },
+                    "designerId": "2f84eaf5-0c42-463a-9405-dbc6ac10e30b"
+                },
+                {
+                    "type": "Ext.Video",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyVideo",
+                        "autoResume": true,
+                        "loop": true,
+                        "url": "http://webapps.figleaf.com/arch101/friends.mp4",
+                        "posterUrl": "http://webapps.figleaf.com/arch101/friends.png"
+                    },
+                    "designerId": "75daf900-b7bd-420a-ab06-3387e7c77230"
+                }
+            ]
+        }
+    ]
+}

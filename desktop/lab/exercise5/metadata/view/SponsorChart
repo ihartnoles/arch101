@@ -1,0 +1,22 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "height": 320,
+        "width": 500,
+        "designer|userClassName": "SponsorChart",
+        "designer|userAlias": "sponsorchart",
+        "constrain": true,
+        "layout": "fit",
+        "closable": false,
+        "title": "Compare Expenditures",
+        "maximizable": true,
+        "minimizable": true
+    },
+    "designerId": "3a19f83e-dd4c-469d-8efd-49c91c7c4826"
+}

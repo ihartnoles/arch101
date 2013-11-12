@@ -1,0 +1,100 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Sponsor"
+        ],
+        "stores": [
+            "Sponsors"
+        ],
+        "designer|userClassName": "Sponsors"
+    },
+    "designerId": "e61a7467-a9ed-4321-8c59-e0a27292f35e",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onStateFilterChange",
+                "fn": "onStateFilterChange",
+                "implHandler": [
+                    "",
+                    "var store = Ext.getStore('Sponsors');",
+                    "",
+                    "if (typeof newValue === 'string') {",
+                    "  store.clearFilter(true);   ",
+                    "} else {",
+                    "  store.filterBy(function(rec) {",
+                    "",
+                    "   if (Ext.Array.indexOf(newValue,rec.get('STATE')) >= 0)",
+                    "      return true;",
+                    "   else",
+                    "      return false;",
+                    "  });",
+                    " }"
+                ],
+                "name": "change",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.ComboBox",
+                "designer|controlQuery": "#stateFilter"
+            },
+            "designerId": "3964ec2b-ee85-4d48-8d4a-d9f0c9241f1a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onSponsorsgridSelectionChange",
+                "fn": "onSponsorsgridSelectionChange",
+                "implHandler": [
+                    "var aSponsorIds = [];",
+                    "var lastNames = [];",
+                    "for (var i=0; i<selected.length; i++) {",
+                    "    lastNames.push(selected[i].get(\"LASTNAME\"));",
+                    "    aSponsorIds.push(selected[i].get('IDSPONSOR'));",
+                    "}",
+                    "",
+                    "this.getEarmarksViewer().setTitle('Earmarks for ' +   lastNames.join(','));",
+                    "",
+                    "",
+                    "Ext.getStore('Earmarks').clearFilter(true);",
+                    "Ext.getStore('Earmarks').filter([",
+                    "  {property: 'IDSPONSOR', value: aSponsorIds.join(',')}",
+                    "]);"
+                ],
+                "name": "selectionchange",
+                "scope": "me",
+                "designer|targetType": "Ext.grid.Panel",
+                "designer|controlQuery": "#sponsorsgrid"
+            },
+            "designerId": "16aeed8d-daed-4336-a45e-9384aeae6a2a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "earmarksViewer",
+                "ref": "earmarksViewer",
+                "selector": "earmarks"
+            },
+            "designerId": "a2c02f3a-2351-42d0-9bac-fe029e87e26c"
+        }
+    ]
+}

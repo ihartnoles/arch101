@@ -1,0 +1,73 @@
+{
+    "name": "exercise4",
+    "settings": {
+        "urlPrefix": "http://localhost/arch101/mobile/lab/exercise4",
+        "spacesToIndent": 4,
+        "exportPath": "/Applications/XAMPP/htdocs/arch101/mobile/lab/exercise4_deploy",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.2.3",
+    "xdsBuild": 1044,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch21",
+    "topInstanceFileMap": {
+        "b0d7d381-3bb4-4c80-a43a-9410fc6446ae": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "10f979cb-a5ac-4e2b-9576-9b9ff61e3783": {
+            "paths": [
+                "metadata/view/main",
+                "app/view/override/main.js",
+                "app/view/main.js"
+            ],
+            "className": "main"
+        },
+        "97410dc8-f46a-496c-af33-6af1890938ae": {
+            "paths": [
+                "metadata/view/Introduction",
+                "app/view/override/Introduction.js",
+                "app/view/Introduction.js"
+            ],
+            "className": "Introduction"
+        },
+        "62e1aca3-f9b8-4b5e-845d-bde9ad112eee": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "bf78382d-8836-4f37-b039-e2e7baf5f6cc": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "10f979cb-a5ac-4e2b-9576-9b9ff61e3783",
+            "97410dc8-f46a-496c-af33-6af1890938ae"
+        ],
+        "store": [],
+        "controller": [
+            "bf78382d-8836-4f37-b039-e2e7baf5f6cc"
+        ],
+        "model": [],
+        "resource": [
+            "b0d7d381-3bb4-4c80-a43a-9410fc6446ae",
+            "62e1aca3-f9b8-4b5e-845d-bde9ad112eee"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

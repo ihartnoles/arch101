@@ -1,0 +1,22 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "height": 600,
+        "width": 472,
+        "designer|userClassName": "Sponsors",
+        "designer|userAlias": "sponsors",
+        "constrain": true,
+        "layout": "fit",
+        "closable": false,
+        "title": "Congressional Representatives",
+        "maximizable": true,
+        "minimizable": true
+    },
+    "designerId": "ca73eef6-d108-4a17-9774-9edc67d15de9"
+}

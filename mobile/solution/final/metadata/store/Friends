@@ -1,0 +1,65 @@
+{
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Friends",
+        "autoLoad": true,
+        "autoSync": true,
+        "model": "Friend",
+        "storeId": "Friends"
+    },
+    "id": "ExtBox1-ext-gen11837",
+    "designerId": "28e089b1-6ac6-46a4-a18b-baaf6e1dd8f4",
+    "cn": [
+        {
+            "type": "sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MySorter2",
+                "property": "lastName"
+            },
+            "designerId": "b85a3a06-5b24-451d-a5c8-dbf639afdc40"
+        },
+        {
+            "type": "grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGrouper1"
+            },
+            "designerId": "10f31c53-4844-4803-946c-96b2354e2857",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "groupFn",
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "record"
+                        ],
+                        "implHandler": [
+                            "return record.get('lastName')[0];"
+                        ]
+                    },
+                    "designerId": "4759e75d-44d0-45de-b092-5edfddb950b9"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "styleHtmlContent": true,
+        "designer|userClassName": "Introduction",
+        "designer|userAlias": "intro",
+        "scrollable": true
+    },
+    "designerId": "e92462fe-dcc0-4f0f-aaf0-cc84d1dac989",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "designer|userClassName": "MyTitleBar",
+                "title": "About Friends with Beer"
+            },
+            "designerId": "1eb1853f-d8f4-437b-a8f3-6aca438b2645"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "<div id=\"beerintro\"> <img src=\"../../resources/images/beer.jpg\"> <p>In these uncertain economic times you need to keep your friends close, and your beer even closer. </p><p>This app quickly identifies your pals who are most likely to have your favorite brew on ice. Then it auto-generates a bogus excuse for you coming to visit, dials your friend, and lets the good times roll!</p>  <p>No friends? No problem! Our app contains a video of \"virtual\" friends drinking, so you'll never need to drink alone again!</p>     </div>",
+                "itemId": "content",
+                "styleHtmlContent": true,
+                "designer|userClassName": "MyContainer3"
+            },
+            "designerId": "b8539835-30fc-4395-8109-daff668155ed"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "noShow",
+                "margin": "5 10 5 10",
+                "designer|userClassName": "MyButton",
+                "text": "Do Not Show Again"
+            },
+            "designerId": "cf6a32e7-138c-44c5-8c4b-a977efa3fc7d"
+        }
+    ]
+}

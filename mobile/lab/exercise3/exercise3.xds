@@ -1,0 +1,37 @@
+{
+    "name": "exercise3",
+    "settings": {
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "urlPrefix": "http://localhost/arch101/mobile/lab/exercise3_deploy",
+        "exportPath": "C:/inetpub/wwwroot/arch101/mobile/lab/exercise3_deploy",
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.2.3",
+    "xdsBuild": 1044,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch21",
+    "topInstanceFileMap": {
+        "b85a2ae3-343d-4b9c-9c17-8e8728736f54": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "b85a2ae3-343d-4b9c-9c17-8e8728736f54"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

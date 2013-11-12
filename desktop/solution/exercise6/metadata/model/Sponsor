@@ -1,0 +1,122 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Sponsor"
+    },
+    "designerId": "9d38653d-47a7-44fa-9cf1-75dacc3a5957",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "IDSPONSOR",
+                "designer|userClassName": "field"
+            },
+            "designerId": "e159e75a-692b-4980-8b28-152d5e215827"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "HONORIFIC",
+                "designer|userClassName": "field1"
+            },
+            "designerId": "3dbc822e-44a1-412c-b35f-3799cbd3b5b7"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "FIRSTNAME",
+                "designer|userClassName": "field2"
+            },
+            "designerId": "c4d134e8-eaa6-442c-b731-50348019a80d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "LASTNAME",
+                "designer|userClassName": "field3"
+            },
+            "designerId": "d7be6f5a-3f36-4199-b064-b51264afc5a0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "PARTY",
+                "designer|userClassName": "field4"
+            },
+            "designerId": "5ba4235d-00a7-4ee8-b814-cbf771196ba2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "STATE",
+                "designer|userClassName": "field5"
+            },
+            "designerId": "c79ff4c6-a2a3-4432-99cd-a19a558155c7"
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy",
+                "url": "http://webapps.figleaf.com/arch101/dataservices/desktop/sponsor.cfc?method=wsBigJSONP"
+            },
+            "designerId": "e5a7d1b2-199a-4b2d-9440-d0ad45608666",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "ROWS",
+                        "successProperty": "SUCCESS",
+                        "totalProperty": "RESULTS",
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "designerId": "25d81892-d380-402e-9829-08fc4766a0d4"
+                }
+            ]
+        }
+    ]
+}

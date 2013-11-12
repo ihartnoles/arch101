@@ -1,0 +1,33 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "Earmark",
+        "remoteFilter": true,
+        "remoteSort": true,
+        "storeId": "Earmarks",
+        "designer|userClassName": "Earmarks",
+        "groupField": "SPONSORNAME",
+        "pageSize": 600
+    },
+    "designerId": "febd5448-ea4e-448c-8f85-956cc5c5399b",
+    "cn": [
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "SPONSORNAME",
+                "designer|userClassName": "MySorter"
+            },
+            "designerId": "d7998b8b-3753-4052-be57-a628a0563e75"
+        }
+    ]
+}

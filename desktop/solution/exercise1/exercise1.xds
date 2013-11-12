@@ -1,0 +1,78 @@
+{
+    "name": "exercise1",
+    "settings": {
+        "urlPrefix": "http://localhost/arch101/desktop/solution/exercise1/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 908,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000499,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "5b066047-7d6c-4665-b7c3-7130b576565d": {
+            "paths": [
+                "metadata/view/persons.Grid",
+                "app/view/override/persons/Grid.js",
+                "app/view/persons/Grid.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "persons.Grid"
+        },
+        "de2f92c9-4d49-41d3-8ace-a01c64806d8d": {
+            "paths": [
+                "metadata/store/Persons",
+                "app/store/override/Persons.js",
+                "app/store/Persons.js"
+            ],
+            "className": "Persons"
+        },
+        "a6be4684-1ccd-4ba5-a04b-a0f4c44f3a49": {
+            "paths": [
+                "metadata/model/Person",
+                "app/model/override/Person.js",
+                "app/model/Person.js"
+            ],
+            "className": "Person"
+        },
+        "4e2d439d-75fd-4154-b9ff-665622b53761": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "c124437f-5b55-444d-9778-2a86c60d3b6f": {
+            "paths": [
+                "metadata/controller/Persons",
+                "app/controller/override/Persons.js",
+                "app/controller/Persons.js"
+            ],
+            "className": "Persons"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "5b066047-7d6c-4665-b7c3-7130b576565d"
+        ],
+        "store": [
+            "de2f92c9-4d49-41d3-8ace-a01c64806d8d"
+        ],
+        "controller": [
+            "c124437f-5b55-444d-9778-2a86c60d3b6f"
+        ],
+        "model": [
+            "a6be4684-1ccd-4ba5-a04b-a0f4c44f3a49"
+        ],
+        "resource": [
+            "4e2d439d-75fd-4154-b9ff-665622b53761"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

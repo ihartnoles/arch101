@@ -1,0 +1,34 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "beer.FriendsList",
+        "designer|userAlias": "beerfriendslist",
+        "store": "Friends",
+        "onItemDisclosure": true
+    },
+    "designerId": "57fc704b-6232-41b7-85c1-f8c90606d787",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "{firstName} {lastName}<br />",
+                    "Distance: {distance} mi"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "4cd6a837-a713-437e-8a3d-64457851cbb3"
+        }
+    ]
+}

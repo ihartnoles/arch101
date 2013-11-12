@@ -1,0 +1,88 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Beer",
+        "requires": [
+            "Ext.data.proxy.JsonP"
+        ]
+    },
+    "designerId": "000762bd-3d83-47aa-b876-190e69dc46c7",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "designerId": "121d648c-2a4c-471d-aff0-9a1794192960"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "designerId": "9d843bec-9e90-43f4-aa65-24ce91424a34"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "type"
+            },
+            "designerId": "2d1d860c-ddc1-4f23-9cbc-ec52f8f8d049"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "country"
+            },
+            "designerId": "4bdb9e16-5f3d-4c53-9bdb-778df7ec7ad3"
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://webapps.figleaf.com/arch101/dataservices/mobile/beer.cfc?method=getBeerList"
+            },
+            "designerId": "5fa628d8-1c4f-4f0d-adc5-808720d40976",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "828db810-8a75-47ec-9c3a-ca54c4b3af63"
+                }
+            ]
+        }
+    ]
+}

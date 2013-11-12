@@ -1,0 +1,28 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Beer"
+        ],
+        "stores": [
+            "Beers"
+        ],
+        "views": [
+            "friendinfo",
+            "MyContainer7"
+        ],
+        "requires": [
+            "Ext.MessageBox"
+        ],
+        "controllers": [
+            "Main"
+        ],
+        "name": "FriendsWithBeer"
+    },
+    "designerId": "application"
+}

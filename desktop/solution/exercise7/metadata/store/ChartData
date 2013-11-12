@@ -1,0 +1,15 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "ChartDatum",
+        "remoteFilter": true,
+        "storeId": "ChartData",
+        "designer|userClassName": "ChartData"
+    },
+    "designerId": "c997a7cd-affb-4a5e-b131-b16f31445244"
+}
