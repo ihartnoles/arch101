@@ -24,13 +24,14 @@ Ext.application({
         'Ext.MessageBox'
     ],
     models: [
-        'Beer'
+        'Beer',
+        'Location'
     ],
     stores: [
-        'Beers'
+        'Beers',
+        'Locations'
     ],
     views: [
-        'friendinfo',
         'friendinfo'
     ],
     controllers: [

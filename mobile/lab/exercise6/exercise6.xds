@@ -74,6 +74,22 @@
                 "app/store/Beers.js"
             ],
             "className": "Beers"
+        },
+        "c3e13a4e-3bc5-467f-a7e5-f6467865dbc9": {
+            "paths": [
+                "metadata/store/Locations",
+                "app/store/override/Locations.js",
+                "app/store/Locations.js"
+            ],
+            "className": "Locations"
+        },
+        "26cce291-3be4-4431-a2da-04dba6f0669a": {
+            "paths": [
+                "metadata/model/Location",
+                "app/model/override/Location.js",
+                "app/model/Location.js"
+            ],
+            "className": "Location"
         }
     },
     "viewOrderMap": {
@@ -83,13 +99,15 @@
             "4b7e5548-9232-4c73-b795-d3724a056034"
         ],
         "store": [
-            "1f0538da-a1d6-4ff7-b4f2-d993693bb73e"
+            "1f0538da-a1d6-4ff7-b4f2-d993693bb73e",
+            "c3e13a4e-3bc5-467f-a7e5-f6467865dbc9"
         ],
         "controller": [
             "fa9156dc-098e-40d1-aca0-6e09ffa81878"
         ],
         "model": [
-            "000762bd-3d83-47aa-b876-190e69dc46c7"
+            "000762bd-3d83-47aa-b876-190e69dc46c7",
+            "26cce291-3be4-4431-a2da-04dba6f0669a"
         ],
         "resource": [
             "7ea10723-9d5d-44bb-8dab-349e6e607abe",

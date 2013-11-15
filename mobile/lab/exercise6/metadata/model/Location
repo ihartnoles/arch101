@@ -1,0 +1,76 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Location",
+        "requires": [
+            "Ext.data.proxy.JsonP"
+        ]
+    },
+    "designerId": "26cce291-3be4-4431-a2da-04dba6f0669a",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "idlocation"
+            },
+            "designerId": "eee13f4f-22b6-483b-a80b-9bb33eb05616"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title"
+            },
+            "designerId": "418b7041-29ed-445e-ab87-4dfbd18697cd"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "description"
+            },
+            "designerId": "7dfbfcc5-0ad0-4183-94e6-a13aafc4ef75"
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://localhost/cfjqm/walksolution/final/data/subgenius.cfc?method=getlocations"
+            },
+            "designerId": "144b161d-70fa-4ab7-9351-6785a813de67",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "3e35f9d4-6bcf-4476-9153-22786209e402"
+                }
+            ]
+        }
+    ]
+}

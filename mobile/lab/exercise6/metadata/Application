@@ -7,14 +7,15 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "Beer"
+            "Beer",
+            "Location"
         ],
         "stores": [
-            "Beers"
+            "Beers",
+            "Locations"
         ],
         "views": [
-            "friendinfo",
-            "MyContainer7"
+            "friendinfo"
         ],
         "requires": [
             "Ext.MessageBox"

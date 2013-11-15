@@ -37,7 +37,7 @@ Ext.define('FriendsWithBeer.view.Main', {
             {
                 xtype: 'list',
                 title: 'Beers',
-                iconCls: 'info',
+                iconCls: 'bookmarks',
                 itemTpl: [
                     '<div>',
                     '    {id}',
@@ -47,7 +47,36 @@ Ext.define('FriendsWithBeer.view.Main', {
                 ],
                 store: 'Beers',
                 grouped: true,
-                onItemDisclosure: true
+                onItemDisclosure: true,
+                items: [
+                    {
+                        xtype: 'titlebar',
+                        docked: 'top',
+                        title: 'Beer List Yo'
+                    }
+                ]
+            },
+            {
+                xtype: 'list',
+                title: 'Locations',
+                iconCls: 'maps',
+                itemTpl: [
+                    '<div>',
+                    '    {title}',
+                    '    {idlocation} <br />',
+                    '    {description}    ',
+                    '</div>'
+                ],
+                store: 'Locations',
+                grouped: true,
+                onItemDisclosure: true,
+                items: [
+                    {
+                        xtype: 'titlebar',
+                        docked: 'top',
+                        title: 'Locations'
+                    }
+                ]
             }
         ],
         tabBar: {

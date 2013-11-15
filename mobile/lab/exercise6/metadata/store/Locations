@@ -1,0 +1,89 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "Location",
+        "storeId": "Locations",
+        "designer|userClassName": "Locations",
+        "designer|userAlias": "Locations",
+        "requires": [
+            "FriendsWithBeer.model.Location"
+        ]
+    },
+    "designerId": "c3e13a4e-3bc5-467f-a7e5-f6467865dbc9",
+    "cn": [
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "idlocation"
+            },
+            "designerId": "037089bb-1001-4d80-be03-959ad834694a"
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "title"
+            },
+            "designerId": "a4d18f51-1f1c-4ea7-ad66-41f69c58a44d"
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "description"
+            },
+            "designerId": "483307da-39a0-4e78-9e2d-0239f15ff144"
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "root": null
+            },
+            "designerId": "15672401-e8e5-48dd-b767-f6731f0a2994",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "item"
+                        ],
+                        "implHandler": [
+                            "return item.get('title');"
+                        ]
+                    },
+                    "designerId": "f85266ee-1a22-4657-b455-306b3c873857"
+                }
+            ]
+        }
+    ]
+}

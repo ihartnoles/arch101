@@ -49,7 +49,7 @@
             "codeClass": null,
             "userConfig": {
                 "title": "Beers",
-                "iconCls": "info",
+                "iconCls": "bookmarks",
                 "store": "Beers",
                 "grouped": true,
                 "onItemDisclosure": true
@@ -74,6 +74,69 @@
                         "designer|displayName": "itemTpl"
                     },
                     "designerId": "a16dfe8f-f70f-4005-ba7b-2936638cddd2"
+                },
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "title": "Beer List Yo"
+                    },
+                    "designerId": "fce2680b-d36d-4def-bfcb-eb70928446db"
+                }
+            ]
+        },
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Locations",
+                "iconCls": "maps",
+                "store": "Locations",
+                "grouped": true,
+                "onItemDisclosure": true
+            },
+            "designerId": "a3cd6536-e6a9-4cde-af7e-e8ad446af025",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div>",
+                            "    {title}",
+                            "    {idlocation} <br />",
+                            "    {description}    ",
+                            "</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "d24cc0cc-bafd-4f7e-9ddf-66838c6e62e4"
+                },
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "title": "Locations"
+                    },
+                    "designerId": "cb68b7d4-19e3-4aa4-89e8-136dafdb1c12"
                 }
             ]
         },
